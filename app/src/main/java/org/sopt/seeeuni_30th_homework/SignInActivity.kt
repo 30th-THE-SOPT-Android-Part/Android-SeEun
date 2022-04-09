@@ -30,6 +30,7 @@ class SignInActivity : AppCompatActivity() {
             if (isInputComplete()) {
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
+                Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "아이디/비밀번호를 확인해주세요", Toast.LENGTH_SHORT).show()
             }
