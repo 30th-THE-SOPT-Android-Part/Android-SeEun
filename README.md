@@ -2,10 +2,9 @@
 ## # 1st Seminar Assginment
 > 로그인, 회원가입, 자기소개 페이지
 
-| 로그인 - 자기소개  | 회원가입 |
+| 로그인 - 자기소개  |  회원가입 |
 |---|---|
-|   |   |
-
+|  <img src = https://user-images.githubusercontent.com/98895198/162605559-c6950366-722c-4895-8727-58663d37e6ab.gif width = 250dp> | <img src = https://user-images.githubusercontent.com/98895198/162605561-d7755768-5b85-4f6e-bd38-18a577833beb.gif width = 250dp>  |
 ### 1) 로그인 페이지(SignInActivity)
 #### 1. 로그인 버튼 클릭 시 <br>
 
@@ -46,6 +45,13 @@
 #### 3. EditTextView 미리보기 글씨 : hint 속성 활용
 ```kotlin
         android:hint="아이디를 입력해주세요."
+```
+#### 4. 회원가입 버튼 클릭 시 SignUpActivity로 이동 : Intent 활용
+```kotlin
+        binding.signupBtn.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
 ```
 ### 2) 회원가입 페이지(SignUpActivity)
 - 입력 조건 충족 검사, 비밀번호 입력내용 가리기, 미리보기 글씨, 토스트 메시지는 로그인 페이지와 동일
