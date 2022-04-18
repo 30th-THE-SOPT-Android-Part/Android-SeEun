@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Seeeuni_30th_Homework">
         <activity
-            android:name=".HomeActivity" />
+            android:name=".HomeActivity"
+            android:exported="true"/>
 
         <activity
             android:name=".SignUpActivity" />

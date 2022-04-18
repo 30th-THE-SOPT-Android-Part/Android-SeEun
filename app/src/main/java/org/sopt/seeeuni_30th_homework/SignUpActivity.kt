@@ -34,12 +34,12 @@ class SignUpActivity : AppCompatActivity() {
         val isIdNull = id.isBlank()
         val isPwNull = pw.isBlank()
 
-        // true  && true = true
-        // true && false = flase
+        // true && true = true
+        // true && false = false
         // false && false = false
-        // false && false = flase
+        // false && false = false
         // true || true = true
-        // ture || false = true
+        // true || false = true
         // false|| false = false
 
         return !isNameNull && !isIdNull && !isPwNull
