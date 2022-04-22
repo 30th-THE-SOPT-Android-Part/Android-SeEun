@@ -33,5 +33,6 @@ class FollowerFragment : Fragment() {
                 FollowerData("김영권", "스파크 서버")
             )
         )
+        followerAdapter.notifyDataSetChanged()
     }
 }
