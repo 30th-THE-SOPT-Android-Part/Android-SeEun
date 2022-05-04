@@ -34,6 +34,6 @@ class RepositoryFragment : Fragment() {
                 RepositoryData("기획 과제 레포지토리", "기획 파트 과제"),
             )
         )
-    repositoryAdapter.notifyDataSetChanged()
+        repositoryAdapter.notifyDataSetChanged()
     }
 }
