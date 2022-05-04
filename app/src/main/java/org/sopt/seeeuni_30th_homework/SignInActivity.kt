@@ -18,10 +18,8 @@ class SignInActivity : AppCompatActivity() {
     private fun isInputComplete(): Boolean {
         val id = binding.idEditText.text
         val pw = binding.pwEditText.text
-        val isIdNull = id.isBlank()
-        val isPwNull = pw.isBlank()
 
-        return !isIdNull && !isPwNull
+        return !(id.isBlank() || pw.isBlank())
     }
 
 

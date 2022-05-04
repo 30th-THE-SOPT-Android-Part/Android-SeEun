@@ -22,7 +22,7 @@ class SignUpActivity : AppCompatActivity() {
             if (isInputComplete(name, id, pw)) {
                 val intent = Intent(this, SignInActivity::class.java)
                 startActivity(intent)
-                if(!isFinishing) finish()
+                if (!isFinishing) finish()
             } else {
                 Toast.makeText(this, "입력되지 않은 정보가 있습니다.", Toast.LENGTH_SHORT).show()
             }
@@ -33,14 +33,6 @@ class SignUpActivity : AppCompatActivity() {
         val isNameNull = name.isBlank()
         val isIdNull = id.isBlank()
         val isPwNull = pw.isBlank()
-
-        // true  && true = true
-        // true && false = flase
-        // false && false = false
-        // false && false = flase
-        // true || true = true
-        // ture || false = true
-        // false|| false = false
 
         return !isNameNull && !isIdNull && !isPwNull
     }
