@@ -1,4 +1,4 @@
-package org.sopt.seeeuni_30th_homework
+package org.sopt.seeeuni_30th_homework.Repository
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

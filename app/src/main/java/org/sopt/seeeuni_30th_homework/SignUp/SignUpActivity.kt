@@ -1,9 +1,10 @@
-package org.sopt.seeeuni_30th_homework
+package org.sopt.seeeuni_30th_homework.SignUp
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import org.sopt.seeeuni_30th_homework.SignIn.SignInActivity
 import org.sopt.seeeuni_30th_homework.databinding.ActivitySignupBinding
 
 class SignUpActivity : AppCompatActivity() {

@@ -1,59 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Profile.ProfileFragment">
 
     <ImageView
         android:id="@+id/img_seeun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="70dp"
-        android:src="@drawable/seeun"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/seeun" />
 
     <TextView
         android:id="@+id/tv_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_seeun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/noto_sans_kr"
         android:text="이름 : 박세은"
         android:textFontWeight="600"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_seeun" />
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/tv_age"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/noto_sans_kr"
         android:text="나이 : 24"
         android:textFontWeight="400"
-        android:textSize="15dp"
-        app:layout_constraintStart_toStartOf="@+id/tv_name"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/tv_mbti"
+        app:layout_constraintStart_toStartOf="@+id/tv_age"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="@font/noto_sans_kr"
         android:text="MBTI : ENTJ"
         android:textFontWeight="400"
-        android:textSize="15dp"
-        app:layout_constraintStart_toStartOf="@+id/tv_age"
-        app:layout_constraintTop_toBottomOf="@+id/tv_age" />
+        android:textSize="15dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_follow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mbti"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -62,12 +66,12 @@
         android:fontFamily="@font/noto_sans_kr"
         android:text="팔로워 목록"
         android:textColor="#8040FF"
-        android:textFontWeight="500"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_mbti" />
+        android:textFontWeight="500" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_repo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mbti"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -76,17 +80,15 @@
         android:fontFamily="@font/noto_sans_kr"
         android:text="레포지토리 목록"
         android:textColor="#8040FF"
-        android:textFontWeight="500"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_mbti" />
+        android:textFontWeight="500" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/container_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_follow"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_follow" />
+        android:layout_marginTop="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

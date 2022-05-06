@@ -1,4 +1,4 @@
-package org.sopt.seeeuni_30th_homework
+package org.sopt.seeeuni_30th_homework.Follower
 
 data class FollowerData(
     val name : String,

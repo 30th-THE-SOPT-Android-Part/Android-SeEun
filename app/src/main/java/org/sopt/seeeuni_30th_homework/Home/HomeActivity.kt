@@ -1,7 +1,11 @@
-package org.sopt.seeeuni_30th_homework
+package org.sopt.seeeuni_30th_homework.Home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bumptech.glide.Glide
+import org.sopt.seeeuni_30th_homework.Follower.FollowerFragment
+import org.sopt.seeeuni_30th_homework.R
+import org.sopt.seeeuni_30th_homework.Repository.RepositoryFragment
 import org.sopt.seeeuni_30th_homework.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -14,6 +18,11 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initTransactionEvent()
+
+        Glide.with(this)
+            .load(R.drawable.seeun)
+            .circleCrop()
+            .into(binding.imgSeeun)
     }
 
     private fun initTransactionEvent() {

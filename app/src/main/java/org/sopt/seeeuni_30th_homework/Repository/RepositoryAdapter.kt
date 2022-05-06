@@ -1,9 +1,8 @@
-package org.sopt.seeeuni_30th_homework
+package org.sopt.seeeuni_30th_homework.Repository
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import org.sopt.seeeuni_30th_homework.databinding.ItemFollowerListBinding
 import org.sopt.seeeuni_30th_homework.databinding.ItemRepositoryListBinding
 
 class RepositoryAdapter : RecyclerView.Adapter<RepositoryAdapter.RepositoryViewHolder>() {

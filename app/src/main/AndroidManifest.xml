@@ -10,17 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Seeeuni_30th_Homework">
         <activity
-            android:name=".HomeActivity"
+            android:name=".Home.HomeActivity"
             android:exported="true" />
 
         <activity
-            android:name=".SignUpActivity"
+            android:name=".SignUp.SignUpActivity"
             android:exported="true" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".SignIn.SignInActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
