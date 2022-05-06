@@ -19,9 +19,11 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/noto_sans_kr"
         android:text="이름 : 박세은"
-        android:textSize="20dp"
+        android:textFontWeight="600"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_seeun" />
@@ -30,9 +32,11 @@
         android:id="@+id/tv_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/noto_sans_kr"
         android:text="나이 : 24"
-        android:textSize="20dp"
+        android:textFontWeight="400"
+        android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/tv_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
@@ -40,9 +44,11 @@
         android:id="@+id/tv_mbti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/noto_sans_kr"
         android:text="MBTI : ENTJ"
-        android:textSize="20dp"
+        android:textFontWeight="400"
+        android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/tv_age"
         app:layout_constraintTop_toBottomOf="@+id/tv_age" />
 
@@ -52,9 +58,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
-        android:background="@color/teal_200"
-        android:text="팔로워\n목록"
-        android:textColor="@color/white"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/noto_sans_kr"
+        android:text="팔로워 목록"
+        android:textColor="#8040FF"
+        android:textFontWeight="500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_mbti" />
 
@@ -64,9 +72,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
-        android:background="@color/purple_700"
-        android:text="레포지토리\n목록"
-        android:textColor="@color/white"
+        android:background="@drawable/selector_button"
+        android:fontFamily="@font/noto_sans_kr"
+        android:text="레포지토리 목록"
+        android:textColor="#8040FF"
+        android:textFontWeight="500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_mbti" />
 
@@ -77,4 +87,6 @@
         android:layout_marginTop="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_follow" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
