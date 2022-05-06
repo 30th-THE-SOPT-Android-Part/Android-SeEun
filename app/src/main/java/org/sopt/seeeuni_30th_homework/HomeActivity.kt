@@ -25,6 +25,8 @@ class HomeActivity : AppCompatActivity() {
 
         binding.btnFollow.setOnClickListener {
             val transaction = supportFragmentManager.beginTransaction()
+            binding.btnFollow.isSelected = true
+            binding.btnRepo.isSelected = false
             when (position) {
                 REPOSITORY_POSITION -> {
                     transaction.replace(R.id.container_home, followerFragment)
@@ -35,6 +37,8 @@ class HomeActivity : AppCompatActivity() {
         }
         binding.btnRepo.setOnClickListener {
             val transaction = supportFragmentManager.beginTransaction()
+            binding.btnRepo.isSelected = true
+            binding.btnFollow.isSelected = false
             when (position) {
                 FOLLOWER_POSITION -> {
                     transaction.replace(R.id.container_home, repositoryFragment)
@@ -44,6 +48,7 @@ class HomeActivity : AppCompatActivity() {
             transaction.commit()
         }
     }
+
     companion object {
         const val FOLLOWER_POSITION = 1
         const val REPOSITORY_POSITION = 2
